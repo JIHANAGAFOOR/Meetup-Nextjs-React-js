@@ -32,7 +32,7 @@ function HomePage(props) {
         <Fragment>
             <Head>
                 <title>React Meetups</title>
-                <meta name='description' content='Browse a huge listbog highly active React meetups'/>
+                <meta name='description' content='Browse a huge listbog highly active React'/>
             </Head>
             <MeetupList meetups={props.meetups} />
         </Fragment>
@@ -56,7 +56,6 @@ export async function getStaticProps() {
                 address: meetup.address,
                 image: meetup.image,
                 id: meetup._id.toString(),
-                
             })),
         },
         revalidate: 1
